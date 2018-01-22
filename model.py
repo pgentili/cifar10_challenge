@@ -91,6 +91,8 @@ class Model(object):
         tf.cast(self.correct_prediction, tf.int64))
     self.accuracy = tf.reduce_mean(
         tf.cast(self.correct_prediction, tf.float32))
+    self.conf_mat = tf.confusion_matrix(
+        labels=self.y_input, predictions=self.predictions, num_classes=10)
 
     with tf.variable_scope('costs'):
       self.y_xent = tf.nn.sparse_softmax_cross_entropy_with_logits(

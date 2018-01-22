@@ -1,6 +1,6 @@
 {
   "_comment": "===== MODEL CONFIGURATION =====",
-  "model_dir": "models/a_very_robust_model",
+  "model_dir": "models/adv_trained",
 
   "_comment": "===== DATASET CONFIGURATION =====",
   "data_path": "cifar10_data",
@@ -28,5 +28,6 @@
   "step_size": 2.0,
   "random_start": true,
   "loss_func": "xent",
-  "store_adv_path": "attack.npy"
+  "store_adv_path": "attacks/attack_adv_8.npy",
+  "class_attack": true
 }
