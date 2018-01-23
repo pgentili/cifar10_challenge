@@ -160,7 +160,7 @@ if __name__ == '__main__':
           x_adv.append(x_batch_adv)
 
         print('Storing examples for class {}'.format(i))
-        path = class_attack_path(store_adv_path, i)
+        path = class_attack_path(config['store_adv_path'], i)
         x_adv = np.concatenate(x_adv, axis=0)
         np.save(path, x_adv)
         print('Examples stored in {}\n'.format(path))
