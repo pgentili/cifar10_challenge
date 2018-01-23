@@ -29,5 +29,5 @@
   "random_start": true,
   "loss_func": "xent",
   "store_adv_path": "attacks/attack_nat_8.npy",
-  "class_attack": true
+  "class_attack": true	
 }

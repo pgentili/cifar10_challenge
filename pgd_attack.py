@@ -140,7 +140,7 @@ if __name__ == '__main__':
                                config['num_steps'],
                                config['step_size'],
                                config['random_start'],
-                               config['loss_func'])
+                               i)
 
         x_adv = [] # adv accumulator
 

@@ -15,6 +15,7 @@ import tensorflow as tf
 import numpy as np
 
 from model import Model
+from pgd_attack import class_attack_path
 import cifar10_input
 
 with open('config.json') as config_file:
